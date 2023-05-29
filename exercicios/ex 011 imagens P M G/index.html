@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Diminua e aumente o tamanho do seu navegador para ver como funciona.</p>
+
+    <picture>
+      <source media="(max-width: 500px)" srcset="images/foto-p.png" type="image/png">
+       <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="imagem G">
+    </picture>
+    <h1>Musiquinha top</h1>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/SnapSave.io - Eiffel 65 - Blue (Scott Rill Remix) _ Drifting Music Video (128 kbps).mp3" type="audio/mpeg">
+        <source src="midia/SnapSave.io - Eiffel 65 - Blue (Scott Rill Remix) _ Drifting Music Video (128 kbps).ogg" type="audio/ogg">
+        <source src="midia/SnapSave.io - Eiffel 65 - Blue (Scott Rill Remix) _ Drifting Music Video (128 kbps).wav" type="audio/wav">
+    </audio>
+    <p>Caso não consiga reproduzir é porque seu navegador não tem capacidade para reproduzir este arquivo <a href="download/musica.zip" target="_blank" type="expanal">clique aqui</a> para fazer o download</p>
+    
+</body>
+</html>

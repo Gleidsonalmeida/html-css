@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divs</title>
+    <style>
+
+        div > p{
+            display: none;
+            
+
+        }
+        div:hover > p{
+            display: block;
+            background-color: black;
+            color: white;
+            width: 100px;  
+        }
+        div{
+            background-color: gray;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            
+        }
+        div#luffy:hover{
+            color: white;
+            background-color: black;
+            border: 2px solid red;
+        }
+        div#zoro:hover{
+            color: white;
+            background-color: black;
+            border: 2px solid red;
+        }
+        div#sanji:hover{
+            color: white;
+            background-color: black;
+            border: 2px solid red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Mugiwaras</h1>
+        <p>Monkey D. Luffy</p>
+        <p>Roronoa Zoro</p>
+        <p>Vinsmoke Sanji</p>
+    </div>
+    
+    <div id="luffy">Capitão <p>Luffy</p></div>
+     <div id="zoro">braço direito <p>zoro</p></div>
+      <div id="sanji">braço esquerdo <p>sanji</p>
+      </div>
+    
+    
+</body>
+</html>
