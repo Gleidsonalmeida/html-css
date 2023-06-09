@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela de filme</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 550px;
+            border-collapse: collapse;
+            
+        }
+        div#container{
+            overflow-x: auto;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+           
+        }
+        col.grupos{
+            background-color: lightblue;
+        }
+        col.nomes{
+            background-color: lightgrey;
+        }
+        col.filmes{
+            background-color: beige;
+        }
+        caption{
+            padding: 10px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicios de tabelas</h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="grupos">
+                <col class="nomes">
+                <col class="filmes" span="3">
+            </colgroup>
+            <caption>
+                Filmes Favoritos
+            </caption>
+            <thead>
+                <tr>
+                    <th>Grupos</th>
+                    <th>Nomes</th>
+                    <Th colspan="3" scope="colgroup">Filmes</Th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Islane</td>
+                    <td>Cars 1</td>
+                    <td>Shooter</td>
+                    <td>Arcane</td>
+                </tr>
+                <tr>
+                    <td>Giovana</td>
+                    <td>It: a coisa</td>
+                    <td>Chuck</td>
+                    <td>Cars 2</td>
+                </tr>
+                <tr>
+                    <td>Priscila</td>
+                    <td>Fuga</td>
+                    <td>Sem saida</td>
+                    <td>O poço</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Gleidson</td>
+                    <td>Vingadores</td>
+                    <td>Fast and Furious</td>
+                    <td>Cars 3</td>
+                </tr>
+                <tr>
+                    <td>Guilherme</td>
+                    <td>Toy Story</td>
+                    <td>A mumia</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Gilcimar</td>
+                    <td>Rambo</td>
+                    <td>Rocky Balboa</td>
+                    <td>Robocop</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

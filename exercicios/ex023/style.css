@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 400px;
+}
+caption{
+    font-weight: bold;
+    background-color: lightgrey;
+   
+    padding: 8px;
+    
+}
+thead > tr > th{
+    position: sticky;
+    top: 0;
+    background-color: rgb(36, 35, 35);
+}
+tbody > tr:nth-child(odd){
+    background-color: lightgrey;
+}
+tbody > tr:nth-child(even){
+    background-color: rgb(255, 255, 255);
+}
+th{
+    background-color: rgb(36, 35, 35);
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+  
+    
+    
+}
+
+td{
+    border: 1px solid black;
+    padding: 7px;
+   
+    
+}
+td.champ{
+    text-align: right;
+}
